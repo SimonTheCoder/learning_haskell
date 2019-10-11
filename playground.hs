@@ -12,3 +12,8 @@ sum (x:xs) = x + sum(xs)
 
 -- sqrt 1 to n, then sum
 ss n = foldr (\x-> \y->x+y) 0 (map (\x->x*x) [1..n])
+
+-- last
+last_l x '\0' = x
+last_l x y = y
+last str = foldr last_l '\0' str 
