@@ -1,6 +1,6 @@
 -- While learning, we will need overwrite the functions in Prelude or other libs.
 -- Add hiding below if needed.
-import Prelude hiding (sum, (++))
+import Prelude hiding (sum, (++), last)
 
 -- A function calc sum of a list. 
 sum [] = 0
