@@ -9,3 +9,8 @@ sum (x:xs) = x + sum(xs)
 -- (++)
 [] ++ ys = ys
 (x:xs) ++ ys = x:(xs ++ ys)
+
+-- append elem to the end of a list.
+append :: t-> [t]-> [t]
+append elem list = list ++ [elem]
+
